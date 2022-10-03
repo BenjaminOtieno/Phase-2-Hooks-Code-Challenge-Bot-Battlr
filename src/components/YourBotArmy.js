@@ -3,12 +3,7 @@ import BotCard from "./BotCard"
 
 function YourBotArmy({ bots, removeBot , deleteBot }) {
   const mapBots = bots.map(bot => 
-    <BotCard 
-    key={bot.id}
-    bot={bot}
-    clickEvent={removeBot}
-    deleteBot={deleteBot}
-    />)
+    <BotCard key={bot.id} bot={bot} clickEvent={removeBot} deleteBot={deleteBot} />)
 
   return (
     <div className="ui segment inverted olive bot-army">
